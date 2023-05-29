@@ -230,7 +230,7 @@ const mostSpokenLanguages = function (arr, top) {
   }
 
   const sortedCountArr = countArr.sort((a, b) => b.count - a.count);
-  return countArr.slice(0, top);
+  return sortedCountArr.slice(0, top);
 };
 
 console.log(mostSpokenLanguages(countriesData, 10));
